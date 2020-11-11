@@ -4,6 +4,7 @@
 #include <string.h>
 #include <curl/curl.h>
 #include "json.hpp"
+#include <typeinfo>
 
 // for convenience
 using json = nlohmann::json;
@@ -37,11 +38,10 @@ string Covid::getWorldData()
     /* always cleanup */ 
     curl_easy_cleanup(curl);
 
-
     json j = json::parse(response);
 
-    return j["Global"];
+    return to_string(j["Global"]["NewConfirmed"]);
     
   }
-  return NULL;
+  return "NULL";
 }
