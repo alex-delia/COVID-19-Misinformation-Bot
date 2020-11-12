@@ -8,16 +8,10 @@ Please use your own personal branches in the repo for your personal/local work. 
 
 ## Compiling the Code
 
-We have created a Makefile which runs a g++ command to compile all the files and libraries necessary. Usage is defined below:
+To run this code locally, you must take the files "libtwitcurl.so" and "libtwitcurl.so.1" and put them in your raspberry pi's /usr/lib directory. We have created a Makefile which runs a g++ command to compile all the files and libraries necessary. Usage is defined below:
 
 ```bash
-make
-```
-
-or
-
-```bash
-g++ **All .cpp and .h created by devs** -ltwitcurl
+run make in the project directory
 ```
 
 ## Raspberry Pi
