@@ -14,6 +14,10 @@ To run this code locally, you must take the files "libtwitcurl.so" and "libtwitc
 run make in the project directory
 ```
 
+The command line prompt will either give you an error in the scenario that a tweet has already been posted today, in that scenario, please try and test again the next day before 2pm. Otherwise, the command line prompt will return to you raw json which will indicate that the Tweet has been posted.
+
+You can view all live tweets at @CovidFakeNews on Twitter.
+
 ## Raspberry Pi
 
 To work on the live code/folders on the pi the credentials are the following:
