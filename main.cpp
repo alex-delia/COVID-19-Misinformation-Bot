@@ -2,6 +2,7 @@
 #include "include/curl/curl.h"
 #include "twitter.h"
 #include "covid.h"
+#include "covidStats.h"
 using namespace std;
 
 void flagTweet(Twitter t){
@@ -24,6 +25,8 @@ int main()
     Twitter twit_flag = Twitter();
     string worldData = Covid::getWorldData();
 
+    string canadaTests = covidStats::getCanadaTests();
+
 
     cout << "Flagging Tweet" << endl;
 
@@ -32,4 +35,6 @@ int main()
     cout << "Posting Case Count Tweet" << endl;
 
     twit.sendTweet("There were " + worldData + " cases of COVID-19 today, globally");
+    twit.sendTweet("There were " + canadaTests + " COVID-19 tests performed today in Canada");
+
 }

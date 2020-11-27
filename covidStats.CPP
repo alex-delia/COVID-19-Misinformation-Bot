@@ -1,5 +1,5 @@
 #include <iostream>
-#include "covid.h"
+#include "covidStats.h"
 #include <stdio.h>
 #include <string.h>
 #include <curl/curl.h>
@@ -9,12 +9,12 @@
 using json = nlohmann::json;
 using namespace std;
 
-size_t write_to_string(void *ptr, size_t size, size_t count, void *stream) {
+size_t covidStats::write_to_string(void *ptr, size_t size, size_t count, void *stream) {
   ((string*)stream)->append((char*)ptr, 0, size*count);
 return size*count;
 }
 
-int main(void)
+string covidStats::getCanadaTests()
 {
   
   CURL *curl;
@@ -25,6 +25,7 @@ int main(void)
   if(curl) {
     string parsedResponse;
     curl_easy_setopt(curl, CURLOPT_URL, "https://api.covid19tracker.ca/summary");
+    // curl_easy_setopt(curl, CURLOPT_URL, "https://api.covid19api.com/summary");
     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_to_string);
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, &parsedResponse);
 
@@ -40,7 +41,7 @@ int main(void)
 
     json j = json::parse(parsedResponse);
     
-    cout << j << endl;
+    return j["data"][0]["change_tests"];
    
   }
   return 0;
