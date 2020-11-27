@@ -22,7 +22,11 @@ void flagTweet(Twitter t){
 int main()
 {
     Twitter twit = Twitter();
+
+    Twitter twit_tests = Twitter();
+
     Twitter twit_flag = Twitter();
+
     string worldData = Covid::getWorldData();
 
     string canadaTests = covidStats::getCanadaTests();
@@ -35,6 +39,6 @@ int main()
     cout << "Posting Case Count Tweet" << endl;
 
     twit.sendTweet("There were " + worldData + " cases of COVID-19 today, globally");
-    twit.sendTweet("There were " + canadaTests + " COVID-19 tests performed today in Canada");
+    twit_tests.sendTweet("There were " + canadaTests + " COVID-19 tests performed today in Canada");
 
 }
