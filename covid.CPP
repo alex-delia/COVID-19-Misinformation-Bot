@@ -47,7 +47,7 @@ string covid::getWorldData()
   }
 
 //daily canada tests
-  string covid::getCanadaTests()
+  json covid::getCanadaData()
   {
   
   CURL *curl;
@@ -74,10 +74,48 @@ string covid::getWorldData()
 
     json j = json::parse(parsedResponse);
     
-    return j["data"][0]["change_tests"];
+    return j;
 
     }
-    return 0;
+    return NULL;
   }
+
+  //daily canada tests
+  string covid::getCanadaTests()
+  {
+    json j = getCanadaData();
+
+    if(j == NULL)
+      return NULL;
+    else
+      return j["data"][0]["change_tests"];
+  }
+  
+  //daily canada deaths
+  string covid::getCanadaDeaths()
+  {
+    json j = getCanadaData();
+
+    if(j == NULL)
+      return NULL;
+    else
+      return j["data"][0]["change_fatalities"];
+  }
+
+  //daily canada recoveries
+  string covid::getCanadaRecoveries()
+  {
+    json j = getCanadaData();
+
+    if(j == NULL)
+      return NULL;
+    else
+      return j["data"][0]["change_recoveries"];
+
+  }
+
+  
+  
+  
 
   

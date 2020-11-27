@@ -23,12 +23,14 @@ int main()
     Twitter twit = Twitter();
 
     Twitter twit_tests = Twitter();
+    Twitter twit_deaths_recoveries = Twitter();
 
     Twitter twit_flag = Twitter();
 
-    string worldData = Covid::getWorldData();
-
-    string canadaTests = Covid::getCanadaTests();
+    string worldData = covid::getWorldData();
+    string canadaTests = covid::getCanadaTests();
+    string canadaDeaths = covid::getCanadaDeaths();
+    string canadaRecoveries = covid::getCanadaRecoveries();
 
 
     cout << "Flagging Tweet" << endl;
@@ -39,5 +41,7 @@ int main()
 
     twit.sendTweet("There were " + worldData + " cases of COVID-19 today, globally");
     twit_tests.sendTweet("There were " + canadaTests + " COVID-19 tests performed today in Canada");
+    twit_deaths_recoveries.sendTweet("There were " + canadaDeaths + " COVID-19 deaths and " + canadaRecoveries + " COVID-19 recoveries today in Canada");
+
 
 }
