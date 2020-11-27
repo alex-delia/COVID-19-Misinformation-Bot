@@ -28,7 +28,7 @@ int main()
     Twitter twit_flag = Twitter();
 
     string worldData = covid::getWorldData();
-    string canadaTests = covidStats::getCanadaTests();
+    string canadaTests = covid::getCanadaTests();
     string canadaDeaths = covid::getCanadaDeaths();
     string canadaRecoveries = covid::getCanadaRecoveries();
 
