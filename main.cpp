@@ -28,7 +28,7 @@ int main()
 
     string worldData = Covid::getWorldData();
 
-    string canadaTests = covidStats::getCanadaTests();
+    string canadaTests = Covid::getCanadaTests();
 
 
     cout << "Flagging Tweet" << endl;
