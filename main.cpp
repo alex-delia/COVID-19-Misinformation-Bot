@@ -2,7 +2,6 @@
 #include "include/curl/curl.h"
 #include "twitter.h"
 #include "covid.h"
-#include "covidStats.h"
 using namespace std;
 
 void flagTweet(Twitter t){
