@@ -19,8 +19,9 @@ void flagTweet(Twitter t){
         string newsArticles = NewsArticles::getNewsArticles("covid");
     }
     else {
-        string newsArticles = NewsArticles::getNewsArticles("masks");
+        string newsArticles = NewsArticles::getNewsArticles("mask");
     }
+
 
     t.sendReply(".@" + userName + ", This tweet has a claim or hashtag that contains misinformation!\nStay up to date on COVID-19 Facts and Regulations at https://www.cdc.gov/. You can read more at: "+ newsArticles, tweetId);
 
