@@ -2,6 +2,7 @@
 #include "include/curl/curl.h"
 #include "twitter.h"
 #include "covid.h"
+#include "newsArticles.h"
 using namespace std;
 
 void flagTweet(Twitter t){
@@ -31,6 +32,8 @@ int main()
     string canadaTests = covid::getCanadaTests();
     string canadaDeaths = covid::getCanadaDeaths();
     string canadaRecoveries = covid::getCanadaRecoveries();
+    string newsArticles = NewsArticles::getNewsArticles("covid");
+
 
 
     cout << "Flagging Tweet" << endl;
