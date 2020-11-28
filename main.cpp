@@ -7,22 +7,15 @@ using namespace std;
 
 void flagTweet(Twitter t){
 
-    string hashtags[10] = {"covidisahoax", "masksdontwork", "covidisfake", "nomasks","plandemic", "scamdemic","masksdontwork","nomaskmandates","nonewnormal", "covidhoax"};
+    string hashtags[3] = {"covidisahoax", "masksdontwork", "covidisfake"};
 
-    int index = rand() % 10; 
-    string newsArticles;
+    int index = rand() % 3; 
+
     string tweetId = t.getTweet(hashtags[index]);
 
     string userName = t.getSenderOfTweet( tweetId);
 
-    if (index == 0 || index == 2 || index == 4 ||index == 5 ||index == 8 ||index == 9){
-        string newsArticles = NewsArticles::getNewsArticles("covid");
-    }
-    else {
-        string newsArticles = NewsArticles::getNewsArticles("masks");
-    }
-
-    t.sendReply(".@" + userName + ", This tweet has a claim or hashtag that contains misinformation!\nStay up to date on COVID-19 Facts and Regulations at https://www.cdc.gov/. You can read more at: "+ newsArticles, tweetId);
+    t.sendReply(".@" + userName + ", This tweet has a claim or hashtag that contains misinformation!\nStay up to date on COVID-19 Facts and Regulations at https://www.cdc.gov/", tweetId);
 
 }
 
@@ -42,6 +35,7 @@ int main()
     string newsArticles = NewsArticles::getNewsArticles("covid");
 
 
+
     cout << "Flagging Tweet" << endl;
 
     flagTweet(twit_flag);
@@ -51,6 +45,6 @@ int main()
     twit.sendTweet("There were " + worldData + " cases of COVID-19 today, globally");
     twit_tests.sendTweet("There were " + canadaTests + " COVID-19 tests performed today in Canada");
     twit_deaths_recoveries.sendTweet("There were " + canadaDeaths + " COVID-19 deaths and " + canadaRecoveries + " COVID-19 recoveries today in Canada");
-    twit.sendTweet("Check out this article: "+ newsArticles); //new
+
 
 }
