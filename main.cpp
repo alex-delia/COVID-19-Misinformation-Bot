@@ -16,14 +16,15 @@ void flagTweet(Twitter t){
     string userName = t.getSenderOfTweet( tweetId);
 
     if (index == 0 || index == 2 || index == 4 ||index == 5 ||index == 8 ||index == 9){
-        string newsArticles = NewsArticles::getNewsArticles("covid");
+        newsArticles = "https://www.cdc.gov/coronavirus/2019-ncov/index.html";
     }
     else {
-        string newsArticles = NewsArticles::getNewsArticles("mask");
+        newsArticles = "https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html";
     }
 
+    string tweet = ".@" + userName + ", This tweet has a claim or hashtag that contains misinformation!\nMake sure you are getting all of your facts from a trusted source. You can read more on this subject here: "+ newsArticles;
 
-    t.sendReply(".@" + userName + ", This tweet has a claim or hashtag that contains misinformation!\nStay up to date on COVID-19 Facts and Regulations at https://www.cdc.gov/. You can read more at: "+ newsArticles, tweetId);
+    t.sendReply(tweet, tweetId);
 
 }
 
