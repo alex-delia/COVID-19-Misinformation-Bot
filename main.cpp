@@ -1,3 +1,8 @@
+/************************************************
+ The main class to run the twitter bot
+ ***********************************************/
+
+/// Libraries included
 #include <iostream>
 #include "include/curl/curl.h"
 #include "twitter.h"
@@ -8,57 +13,78 @@
 using json = nlohmann::json;
 using namespace std;
 
+//! Method to flag and respond to posts
+/*!
+    The flagTweet method takes a tweet that contains one of the 10 defined hashtags and reponds to it using official links to trusted COVID-19 information
+*/
 void flagTweet(Twitter t){
 
-    string hashtags[10] = {"covidisahoax", "masksdontwork", "covidisfake", "nomasks","plandemic", "scamdemic","masksdontwork","nomaskmandates","nonewnormal", "covidhoax"};
+    string hashtags[10] = {"covidisahoax", "masksdontwork", "covidisfake", "nomasks","plandemic", "scamdemic","masksdontwork","nomaskmandates","nonewnormal", "covidhoax"}; /*!< fake news COVID-19 hashtags */
 
-    int index = rand() % 10; 
-    string newsArticles;
-    string tweetId = t.getTweet(hashtags[index]);
+    int index = rand() % 10; /*!< 1-10 index number*/
 
-    string userName = t.getSenderOfTweet( tweetId);
+    string newsArticles; /*!< news article URL */
 
-    if (index == 0 || index == 2 || index == 4 ||index == 5 ||index == 8 ||index == 9){
+    string tweetId = t.getTweet(hashtags[index]); /*!< the tweet ID */
+
+    string userName = t.getSenderOfTweet( tweetId); /*!< the tweeter's username (handle) */
+
+    //! Loop to find relevent news article URL
+    /*!
+      Depending on the category of hashtag (general COVID-19 or masks), an approriate URL is returned
+    */
+    if (index == 0 || index == 2 || index == 4 ||index == 5 ||index == 8 ||index == 9){ /*!< general COVID-19 URL */
         newsArticles = "https://www.cdc.gov/coronavirus/2019-ncov/index.html";
     }
     else {
-        newsArticles = "https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html";
+        newsArticles = "https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html"; /*!< mask related URL*/
     }
 
-    string tweet = ".@" + userName + ", This tweet has a claim or hashtag that contains misinformation!\nMake sure you are getting all of your facts from a trusted source. You can read more on this subject here: "+ newsArticles;
+    string tweet = ".@" + userName + ", This tweet has a claim or hashtag that contains misinformation!\nMake sure you are getting all of your facts from a trusted source. You can read more on this subject here: "+ newsArticles; /*!< creates reply to be posted */
 
-    t.sendReply(tweet, tweetId);
+    t.sendReply(tweet, tweetId); /*!< tweet the reply */
 
 }
-
+//! Main
+/*!
+    Main method to create the twitter bot and post daily updates
+*/
 int main()
 {
-    Twitter twit = Twitter();
+    Twitter twit = Twitter(); /*!< set up twitter bot */
 
-    Twitter twit_tests = Twitter();
-    Twitter twit_deaths_recoveries = Twitter();
+    Twitter twit_tests = Twitter(); /*!< set up twitter bot for posting about COVID-19 tests */
 
-    Twitter twit_flag = Twitter();
+    Twitter twit_deaths_recoveries = Twitter(); /*!< set up twitter bot for posting about COVID-19 deaths & recoveries */
 
-    string worldData = covid::getWorldData();
-    string canadaTests = covid::getCanadaTests();
-    string canadaDeaths = covid::getCanadaDeaths();
-    string canadaRecoveries = covid::getCanadaRecoveries();
-    string newsArticles = NewsArticles::getNewsArticles("covid");
+    Twitter twit_flag = Twitter(); /*!< set up twitter bot for flagging tweets */
 
+    string worldData = covid::getWorldData(); /*!< COVID-19 data from around the world*/
 
-    cout << "Flagging Tweet" << endl;
+    string canadaTests = covid::getCanadaTests(); /*!< COVID-19 tests in Canada */
+
+    string canadaDeaths = covid::getCanadaDeaths(); /*!< COVID-19 deaths in Canada */
+
+    string canadaRecoveries = covid::getCanadaRecoveries(); /*!< COVID-19 recoveries in Canada */
+
+    string newsArticles = NewsArticles::getNewsArticles("covid"); /*!< set up news articles based on the keyword "covid" */
+
+    cout << "Flagging Tweet" << endl; /*!< output notifying flagging a tweet */
+
     try {
-        flagTweet(twit_flag);
+        flagTweet(twit_flag); /*!< call flag tweet method */
     } catch (json::exception e){
 
     }
 
-    cout << "Posting Case Count Tweet" << endl;
+    cout << "Posting Case Count Tweet" << endl; /*!< output notifying daily posts */
 
-    twit.sendTweet("There were " + worldData + " cases of COVID-19 today, globally");
-    twit_tests.sendTweet("There were " + canadaTests + " COVID-19 tests performed today in Canada");
-    twit_deaths_recoveries.sendTweet("There were " + canadaDeaths + " COVID-19 deaths and " + canadaRecoveries + " COVID-19 recoveries today in Canada");
-    twit.sendTweet("Check out this article: "+ newsArticles); //new
+    twit.sendTweet("There were " + worldData + " cases of COVID-19 today, globally"); /*!< Posts world COVID-19 case numbers*/
+
+    twit_tests.sendTweet("There were " + canadaTests + " COVID-19 tests performed today in Canada"); /*!< Posts Canada COVID-19 test numbers*/
+
+    twit_deaths_recoveries.sendTweet("There were " + canadaDeaths + " COVID-19 deaths and " + canadaRecoveries + " COVID-19 recoveries today in Canada"); /*!< Posts Canada COVID-19 deaths and recoveries*/
+
+    twit.sendTweet("Check out this article: "+ newsArticles); /*!< Posts relevent COVID-19 news article URL*/
 
 }

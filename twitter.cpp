@@ -24,10 +24,10 @@ using namespace std;
  * Constructs basic twitter object and sets all the proper authentication tokens so we can make calls to the API
  */
 Twitter::Twitter(){
-    this->twit.getOAuth().setConsumerKey("ulNuJWQiUBVUn9XV2SawRQwDg");
-    this->twit.getOAuth().setConsumerSecret("ArkIXUoHL9CiGZV9AsbZFbiWc4TMMEUFwd91tlVFMRhhJaiV1h");
-    this->twit.getOAuth().setOAuthTokenKey("1324153496338354179-1hlRx3AkUwCRB2ptynR3dqYQgA5Usb");
-    this->twit.getOAuth().setOAuthTokenSecret("os0Y2gCaoigZD0x6Q1w6HQHbPXhQE9qqQqtPJnxqq5VwJ");
+    this->twit.getOAuth().setConsumerKey("ulNuJWQiUBVUn9XV2SawRQwDg"); //Sets Consumer Key
+    this->twit.getOAuth().setConsumerSecret("ArkIXUoHL9CiGZV9AsbZFbiWc4TMMEUFwd91tlVFMRhhJaiV1h"); //Sets Consumer Secret
+    this->twit.getOAuth().setOAuthTokenKey("1324153496338354179-1hlRx3AkUwCRB2ptynR3dqYQgA5Usb"); //Sets Token Key for OAuth
+    this->twit.getOAuth().setOAuthTokenSecret("os0Y2gCaoigZD0x6Q1w6HQHbPXhQE9qqQqtPJnxqq5VwJ"); //Sets Token Secret for OAuth
 }
 
 /**
@@ -41,13 +41,13 @@ void Twitter::sendTweet(string input)
     string resp;
 
     //Send API Call
-    if(this->twit.statusUpdate(input)){
-        this->twit.getLastWebResponse(resp);
+    if(this->twit.statusUpdate(input)){ //Calls endpoint to send a tweet out
+        this->twit.getLastWebResponse(resp); //Gets success response from API
         printf( "\ntwitterClient:: twitCurl::statusUpdate web response:\n%s\n", resp.c_str() );
     }
     else
     {
-        this->twit.getLastCurlError( resp );
+        this->twit.getLastCurlError( resp ); //Gets failure response from API
         printf( "\ntwitterClient:: twitCurl::statusUpdate error:\n%s\n", resp.c_str() );
     }
 
@@ -65,13 +65,13 @@ void Twitter::sendReply(string input, string id)
 
     cout << id << endl;
     //Send API Call
-    if(this->twit.statusUpdate( input, id )){
-        this->twit.getLastWebResponse(resp);
+    if(this->twit.statusUpdate( input, id )){ //Calls endpoint to send reply
+        this->twit.getLastWebResponse(resp); //Gets success response from API
         printf( "\ntwitterClient:: twitCurl::statusUpdate web response:\n%s\n", resp.c_str() );
     }
     else
     {
-        this->twit.getLastCurlError( resp );
+        this->twit.getLastCurlError( resp ); //Gets failure response from API
         printf( "\ntwitterClient:: twitCurl::statusUpdate error:\n%s\n", resp.c_str() );
     }
 
@@ -89,15 +89,15 @@ string Twitter::getSenderOfTweet(string id)
     cout << id << endl;
 
     //Send API Call
-    if(this->twit.statusShowById(id )){
-        this->twit.getLastWebResponse(resp);
+    if(this->twit.statusShowById(id )){ //Calls endpoint to get tweet
+        this->twit.getLastWebResponse(resp); //assigns resp to the API response
             
-        json j = json::parse(resp);
+        json j = json::parse(resp); //Parses reponse into JSON
         return j["user"]["screen_name"];
     }
     else
     {
-        this->twit.getLastCurlError( resp );
+        this->twit.getLastCurlError( resp ); //Gets failure response from API
         printf( "\ntwitterClient:: twitCurl::statusUpdate error:\n%s\n", resp.c_str() );
     }
 
@@ -114,16 +114,16 @@ bool Twitter::isRetweet(string id)
     string resp;
 
     //Send API Call
-    if(this->twit.statusShowById(id)){
-        this->twit.getLastWebResponse(resp);
+    if(this->twit.statusShowById(id)){ //Calls endpoint to get tweet
+        this->twit.getLastWebResponse(resp); //assigns resp to the API response
 
-        json j = json::parse(resp);
+        json j = json::parse(resp); //parses repsonse into JSON
 
         return !j["retweeted_status"].is_null();
     }
     else
     {
-        this->twit.getLastCurlError( resp );
+        this->twit.getLastCurlError( resp ); //Gets failure resp from API
         printf( "\ntwitterClient:: twitCurl::statusUpdate error:\n%s\n", resp.c_str() );
     }
 }
@@ -139,19 +139,23 @@ string Twitter::getTweet(string input)
     string resp = "";
 
     //Send API Call
-    if( this->twit.search(input, "10") )
+    if( this->twit.search(input, "10") ) //Searches for tweet with API call
     {
-        this->twit.getLastWebResponse( resp );
+        this->twit.getLastWebResponse( resp ); //gets response and assigns it to resp
 
 
-        json j = json::parse(resp);
+        json j = json::parse(resp); //parses response into JSON
 
-        for(int i = 0; i < 10; i++){
-            string id = to_string(j["statuses"][i]["id"]);
-            if (!isRetweet(id)){
+        for(int i = 0; i < 10; i++){ //loops through all the tweets in response
+
+            string id = to_string(j["statuses"][i]["id"]); //gets ID of current tweet
+
+            if (!isRetweet(id)){ //checks if current tweet isn't a retweet
+
                 cout << "Tweet: " << j["statuses"][i]["text"] << endl;
                 cout << "ID: " << to_string(j["statuses"][i]["id"]) << endl;
-                return id;
+
+                return id; //returns the ID if it isn't
             }
         }
 
@@ -159,7 +163,7 @@ string Twitter::getTweet(string input)
     }
     else
     {
-        this->twit.getLastCurlError( resp );
+        this->twit.getLastCurlError( resp ); //Gets failure response from API
         printf( "\ntwitterClient:: twitCurl::search error:\n%s\n", resp.c_str() );
         return "";
     }
