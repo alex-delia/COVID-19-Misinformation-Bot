@@ -8,6 +8,9 @@
 #include "twitter.h"
 #include "covid.h"
 #include "newsArticles.h"
+#include "json.hpp"
+
+using json = nlohmann::json;
 using namespace std;
 
 //! Method to flag and respond to posts
@@ -68,7 +71,11 @@ int main()
 
     cout << "Flagging Tweet" << endl; /*!< output notifying flagging a tweet */
 
-    flagTweet(twit_flag); /*!< call flag tweet method */
+    try {
+        flagTweet(twit_flag); /*!< call flag tweet method */
+    } catch (json::exception e){
+
+    }
 
     cout << "Posting Case Count Tweet" << endl; /*!< output notifying daily posts */
 
