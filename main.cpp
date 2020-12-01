@@ -3,6 +3,9 @@
 #include "twitter.h"
 #include "covid.h"
 #include "newsArticles.h"
+#include "json.hpp"
+
+using json = nlohmann::json;
 using namespace std;
 
 void flagTweet(Twitter t){
@@ -45,8 +48,11 @@ int main()
 
 
     cout << "Flagging Tweet" << endl;
+    try {
+        flagTweet(twit_flag);
+    } catch (json::exception e){
 
-    flagTweet(twit_flag);
+    }
 
     cout << "Posting Case Count Tweet" << endl;
 
