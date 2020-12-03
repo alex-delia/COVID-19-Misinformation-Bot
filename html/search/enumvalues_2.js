@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['discarded',['discarded',['../namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985a94708897ec9db8647dfe695714c98e46',1,'nlohmann::detail']]]
+  ['cbor',['cbor',['../namespacenlohmann_1_1detail.html#aa554fc6a11519e4f347deb25a9f0db40aaf9de350d652f0c9055ddab514bd23ea',1,'nlohmann::detail']]]
 ];

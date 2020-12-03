@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Covid Misinformation Twitter Bot: covid Class Reference</title>
+<title>COVID-19 Misinformation Twitter Bot: covid Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Covid Misinformation Twitter Bot
+   <div id="projectname">COVID-19 Misinformation Twitter Bot
    </div>
-   <div id="projectbrief">Twitter bot created by Western Students to find and correct misinformation on the Twitter Platform</div>
+   <div id="projectbrief">Twitter bot for finding and correcting fake news and misinformation on the twitter platform</div>
   </td>
  </tr>
  </tbody>
@@ -66,31 +66,310 @@ $(function() {
 <div class="title">covid Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="covid_8h_source.html">covid.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a655fd158743b86be4900ff469dcdfe11"><td class="memItemLeft" align="right" valign="top"><a id="a655fd158743b86be4900ff469dcdfe11"></a>
-static size_t&#160;</td><td class="memItemRight" valign="bottom"><b>write_to_string</b> (void *ptr, size_t size, size_t count, void *stream)</td></tr>
+<tr class="memitem:a655fd158743b86be4900ff469dcdfe11"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcovid.html#a655fd158743b86be4900ff469dcdfe11">write_to_string</a> (void *ptr, size_t size, size_t count, void *stream)</td></tr>
+<tr class="memdesc:a655fd158743b86be4900ff469dcdfe11"><td class="mdescLeft">&#160;</td><td class="mdescRight">gets the size of the data from the GET request made by curl  <a href="#a655fd158743b86be4900ff469dcdfe11">More...</a><br /></td></tr>
 <tr class="separator:a655fd158743b86be4900ff469dcdfe11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2736212b3616465a46ac7e91ba0e8c75"><td class="memItemLeft" align="right" valign="top"><a id="a2736212b3616465a46ac7e91ba0e8c75"></a>
-static string&#160;</td><td class="memItemRight" valign="bottom"><b>getWorldData</b> ()</td></tr>
+<tr class="memitem:a2736212b3616465a46ac7e91ba0e8c75"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcovid.html#a2736212b3616465a46ac7e91ba0e8c75">getWorldData</a> ()</td></tr>
+<tr class="memdesc:a2736212b3616465a46ac7e91ba0e8c75"><td class="mdescLeft">&#160;</td><td class="mdescRight">gets the world Covid-19 summary  <a href="#a2736212b3616465a46ac7e91ba0e8c75">More...</a><br /></td></tr>
 <tr class="separator:a2736212b3616465a46ac7e91ba0e8c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f3951a94d723d2b7a0f8663ee9ae043"><td class="memItemLeft" align="right" valign="top"><a id="a4f3951a94d723d2b7a0f8663ee9ae043"></a>
-static <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getCanadaData</b> ()</td></tr>
+<tr class="memitem:a4f3951a94d723d2b7a0f8663ee9ae043"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcovid.html#a4f3951a94d723d2b7a0f8663ee9ae043">getCanadaData</a> ()</td></tr>
+<tr class="memdesc:a4f3951a94d723d2b7a0f8663ee9ae043"><td class="mdescLeft">&#160;</td><td class="mdescRight">gets the Canada Covid-19 summary  <a href="#a4f3951a94d723d2b7a0f8663ee9ae043">More...</a><br /></td></tr>
 <tr class="separator:a4f3951a94d723d2b7a0f8663ee9ae043"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45df724e3b33d39ec514f8a3389aee27"><td class="memItemLeft" align="right" valign="top"><a id="a45df724e3b33d39ec514f8a3389aee27"></a>
-static string&#160;</td><td class="memItemRight" valign="bottom"><b>getCanadaTests</b> ()</td></tr>
-<tr class="separator:a45df724e3b33d39ec514f8a3389aee27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fd32af9c5cbc668c37baf984c711755"><td class="memItemLeft" align="right" valign="top"><a id="a8fd32af9c5cbc668c37baf984c711755"></a>
-static string&#160;</td><td class="memItemRight" valign="bottom"><b>getCanadaDeaths</b> ()</td></tr>
+<tr class="memitem:aa5f2876efaa26df2415f20f071614677"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcovid.html#aa5f2876efaa26df2415f20f071614677">getTests</a> (string province)</td></tr>
+<tr class="memdesc:aa5f2876efaa26df2415f20f071614677"><td class="mdescLeft">&#160;</td><td class="mdescRight">gets the daily COVID-19 tests per province  <a href="#aa5f2876efaa26df2415f20f071614677">More...</a><br /></td></tr>
+<tr class="separator:aa5f2876efaa26df2415f20f071614677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fd32af9c5cbc668c37baf984c711755"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcovid.html#a8fd32af9c5cbc668c37baf984c711755">getCanadaDeaths</a> ()</td></tr>
+<tr class="memdesc:a8fd32af9c5cbc668c37baf984c711755"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses a json to get daily deaths  <a href="#a8fd32af9c5cbc668c37baf984c711755">More...</a><br /></td></tr>
 <tr class="separator:a8fd32af9c5cbc668c37baf984c711755"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ee3963552932ec0a393f06e065c1db9"><td class="memItemLeft" align="right" valign="top"><a id="a4ee3963552932ec0a393f06e065c1db9"></a>
-static string&#160;</td><td class="memItemRight" valign="bottom"><b>getCanadaRecoveries</b> ()</td></tr>
+<tr class="memitem:a4ee3963552932ec0a393f06e065c1db9"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcovid.html#a4ee3963552932ec0a393f06e065c1db9">getCanadaRecoveries</a> ()</td></tr>
+<tr class="memdesc:a4ee3963552932ec0a393f06e065c1db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses a json to get daily recoveries  <a href="#a4ee3963552932ec0a393f06e065c1db9">More...</a><br /></td></tr>
 <tr class="separator:a4ee3963552932ec0a393f06e065c1db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dd55e49c77cc1847d8d104296f5939d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcovid.html#a8dd55e49c77cc1847d8d104296f5939d">getDailyTotalRecovs</a> ()</td></tr>
+<tr class="memdesc:a8dd55e49c77cc1847d8d104296f5939d"><td class="mdescLeft">&#160;</td><td class="mdescRight">gets the total recoveries on the current date  <a href="#a8dd55e49c77cc1847d8d104296f5939d">More...</a><br /></td></tr>
+<tr class="separator:a8dd55e49c77cc1847d8d104296f5939d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbc3ab7b01d29f8b73c1e811a915f356"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcovid.html#acbc3ab7b01d29f8b73c1e811a915f356">getLastWeekRecovs</a> ()</td></tr>
+<tr class="memdesc:acbc3ab7b01d29f8b73c1e811a915f356"><td class="mdescLeft">&#160;</td><td class="mdescRight">gets the total recoveries a week ago from the current date  <a href="#acbc3ab7b01d29f8b73c1e811a915f356">More...</a><br /></td></tr>
+<tr class="separator:acbc3ab7b01d29f8b73c1e811a915f356"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4f3951a94d723d2b7a0f8663ee9ae043"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f3951a94d723d2b7a0f8663ee9ae043">&#9670;&nbsp;</a></span>getCanadaData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="covid_8cpp.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> covid::getCanadaData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>gets the Canada Covid-19 summary </p>
+<dl class="section return"><dt>Returns</dt><dd>returns an json containing the Canada Covid-19 data</dd></dl>
+<p>Calls Canadian Covid-19 API URL using curl to fetch the summary data This json is then returned for further use within other functions </p>
+
+</div>
+</div>
+<a id="a8fd32af9c5cbc668c37baf984c711755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fd32af9c5cbc668c37baf984c711755">&#9670;&nbsp;</a></span>getCanadaDeaths()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string covid::getCanadaDeaths </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>parses a json to get daily deaths </p>
+<dl class="section return"><dt>Returns</dt><dd>returns a string containing the number of daily deaths</dd></dl>
+<p>Calls the <a class="el" href="classcovid.html#a4f3951a94d723d2b7a0f8663ee9ae043" title="gets the Canada Covid-19 summary ">getCanadaData()</a> function to get a json containing data, then parses through the json to get the daily deaths in a string </p>
+
+</div>
+</div>
+<a id="a4ee3963552932ec0a393f06e065c1db9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee3963552932ec0a393f06e065c1db9">&#9670;&nbsp;</a></span>getCanadaRecoveries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string covid::getCanadaRecoveries </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>parses a json to get daily recoveries </p>
+<dl class="section return"><dt>Returns</dt><dd>returns a string containing the number of daily recoveries</dd></dl>
+<p>Calls the <a class="el" href="classcovid.html#a4f3951a94d723d2b7a0f8663ee9ae043" title="gets the Canada Covid-19 summary ">getCanadaData()</a> function to get a json containing data, then parses through the json to get the daily recoveries in a string </p>
+
+</div>
+</div>
+<a id="a8dd55e49c77cc1847d8d104296f5939d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dd55e49c77cc1847d8d104296f5939d">&#9670;&nbsp;</a></span>getDailyTotalRecovs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int covid::getDailyTotalRecovs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>gets the total recoveries on the current date </p>
+<dl class="section return"><dt>Returns</dt><dd>returns an int containing the total recoveries to the current date</dd></dl>
+<p>Uses C++ time functions to get current date This date is inputted into the Canadian Covid-19 API URL using curl to fetch the data The json is then parsed to get the totalRecoveries from the data </p>
+
+</div>
+</div>
+<a id="acbc3ab7b01d29f8b73c1e811a915f356"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbc3ab7b01d29f8b73c1e811a915f356">&#9670;&nbsp;</a></span>getLastWeekRecovs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int covid::getLastWeekRecovs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>gets the total recoveries a week ago from the current date </p>
+<dl class="section return"><dt>Returns</dt><dd>returns an int containing the total recoveries from one week ago</dd></dl>
+<p>Uses C++ time functions to get current date, and then properly find the date 7 days prior This date is inputted into the Canadian Covid-19 API URL using curl to fetch the data The json is then parsed to get the totalRecoveries from the data </p>
+
+</div>
+</div>
+<a id="aa5f2876efaa26df2415f20f071614677"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5f2876efaa26df2415f20f071614677">&#9670;&nbsp;</a></span>getTests()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string covid::getTests </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>province</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>gets the daily COVID-19 tests per province </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">province</td><td>a string containing the code for a province </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>returns a string containing the daily tests in the specified province</dd></dl>
+<p>Uses C++ time functions to get yesterdays date This date is inputted into the Canadian Covid-19 API URL using curl to fetch the data The json is then parsed to get the daily tests from the data </p>
+
+</div>
+</div>
+<a id="a2736212b3616465a46ac7e91ba0e8c75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2736212b3616465a46ac7e91ba0e8c75">&#9670;&nbsp;</a></span>getWorldData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string covid::getWorldData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>gets the world Covid-19 summary </p>
+<dl class="section return"><dt>Returns</dt><dd>returns an string containing the new confirmed daily cases in the world</dd></dl>
+<p>Calls Covid-19 API URL using curl to fetch the world summary data The json is then parsed to return the confirmed new cases </p>
+
+</div>
+</div>
+<a id="a655fd158743b86be4900ff469dcdfe11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a655fd158743b86be4900ff469dcdfe11">&#9670;&nbsp;</a></span>write_to_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t covid::write_to_string </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>stream</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>gets the size of the data from the GET request made by curl </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptr</td><td>returned data pointer </td></tr>
+    <tr><td class="paramname">size</td><td>size of the data item </td></tr>
+    <tr><td class="paramname">count</td><td>the number of the data items </td></tr>
+    <tr><td class="paramname">stream</td><td>pointer to store the data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of bytes that the data is (unsized integral type) A callback function called by libcurl so that the received data can be collected in a single buffer </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="covid_8h_source.html">covid.h</a></li>
-<li>covid.cpp</li>
+<li><a class="el" href="covid_8cpp.html">covid.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

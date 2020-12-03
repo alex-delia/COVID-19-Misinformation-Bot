@@ -13,7 +13,7 @@
 using json = nlohmann::json;
 using namespace std;
 
-//! Method to flag and respond to posts
+//! @brief Method to flag and respond to posts
 /*!
     The flagTweet method takes a tweet that contains one of the 10 defined hashtags and reponds to it using official links to trusted COVID-19 information
 */
@@ -102,11 +102,9 @@ int main()
 
     twit.sendTweet("There were " + worldData + " cases of COVID-19 today, globally"); /*!< Posts world COVID-19 case numbers*/
 
+    postProvinces(); /* Post Testing Numbers for Canadian Provinces*/
+
     twit_deaths_recoveries.sendTweet("There were " + canadaDeaths + " COVID-19 deaths and " + canadaRecoveries + " COVID-19 recoveries today in Canada"); /*!< Posts Canada COVID-19 deaths and recoveries*/
-
-    twit.sendTweet("There were " + worldData + " cases of COVID-19 today, globally");
-
-    twit_deaths_recoveries.sendTweet("There were " + canadaDeaths + " COVID-19 deaths and " + canadaRecoveries + " COVID-19 recoveries today in Canada");
 
     twit.sendTweet("Check out this article: "+ newsArticles); /*!< Posts relevent COVID-19 news article URL*/
 
