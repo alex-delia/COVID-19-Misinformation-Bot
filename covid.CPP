@@ -21,10 +21,10 @@ using json = nlohmann::json;
 using namespace std;
 
 /** @brief gets the size of the data from the GET request made by curl
-* @param ptr returned data
+* @param ptr returned data pointer
 * @param size size of the data item
 * @param count the number of the data items
-* @param stream
+* @param stream pointer to store the data
 * @return the number of bytes that the data is (unsized integral type)
 *A callback function called by libcurl so that the received data can be collected in a single buffer
 */
