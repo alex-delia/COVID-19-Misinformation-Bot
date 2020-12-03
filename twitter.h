@@ -22,7 +22,7 @@ class Twitter {
         string getTweet(string input);
         string getSenderOfTweet(string id);
         bool isRetweet(string id);
-        bool isQuote(string id);
+       
     private:
         twitCurl twit;
 };

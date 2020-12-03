@@ -14,8 +14,12 @@ using json = nlohmann::json;
 using namespace std;
 
 //! Method to flag and respond to posts
-/*!
-    The flagTweet method takes a tweet that contains one of the 10 defined hashtags and reponds to it using official links to trusted COVID-19 information
+/** 
+ * @brief The flagTweet method takes a tweet that contains one of the 10 defined hashtags and 
+ * reponds to it using official links to trusted COVID-19 information
+ * @param t the twitter object that allows the bot to run
+ * @author Estelle Chung 
+ * 
 */
 void flagTweet(Twitter t){
 
@@ -46,7 +50,7 @@ void flagTweet(Twitter t){
 }
 
 /** @brief Posts a new tweet to twitter
-   * 
+   * @author Alex 
    * Uses the province based covid functions to retrieve data, then creates a new twitter object and sends out a tweet
    */
 void postProvinces(){
@@ -71,8 +75,13 @@ void postProvinces(){
     + "\nNL: " + NLTests + "\nNT: " + NTTests + "\nYK: " + YKTests + "\nNU: " + NUTests);
 }
 //! Main
-/*!
-    Main method to create the twitter bot and post daily updates
+/**
+ *  @author Estelle Chung
+ *  @brief Main method to create the twitter bot and post daily updates
+ *  In the main method, the Twitter bot is created and all the COVID-19 information is received. 
+ *  The flag tweet method is called to flag a tweet daily, 
+ *  and then the bot posts daily updates for COVID-19 data about cases, recoveries and deaths.
+ * 
 */
 int main()
 {
