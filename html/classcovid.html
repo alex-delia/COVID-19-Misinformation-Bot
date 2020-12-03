@@ -72,7 +72,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a655fd158743b86be4900ff469dcdfe11"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcovid.html#a655fd158743b86be4900ff469dcdfe11">write_to_string</a> (void *ptr, size_t size, size_t count, void *stream)</td></tr>
-<tr class="memdesc:a655fd158743b86be4900ff469dcdfe11"><td class="mdescLeft">&#160;</td><td class="mdescRight">gets the size of the data from the GET request made by curl  <a href="#a655fd158743b86be4900ff469dcdfe11">More...</a><br /></td></tr>
+<tr class="memdesc:a655fd158743b86be4900ff469dcdfe11"><td class="mdescLeft">&#160;</td><td class="mdescRight">this class communicates with multiple Covid-19 APIs to provide relevant methods  <a href="#a655fd158743b86be4900ff469dcdfe11">More...</a><br /></td></tr>
 <tr class="separator:a655fd158743b86be4900ff469dcdfe11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2736212b3616465a46ac7e91ba0e8c75"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcovid.html#a2736212b3616465a46ac7e91ba0e8c75">getWorldData</a> ()</td></tr>
 <tr class="memdesc:a2736212b3616465a46ac7e91ba0e8c75"><td class="mdescLeft">&#160;</td><td class="mdescRight">gets the world Covid-19 summary  <a href="#a2736212b3616465a46ac7e91ba0e8c75">More...</a><br /></td></tr>
@@ -353,8 +353,11 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>gets the size of the data from the GET request made by curl </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>this class communicates with multiple Covid-19 APIs to provide relevant methods </p>
+<p><a class="el" href="covid_8h.html">covid.h</a>/covid.cpp </p><dl class="section author"><dt>Author</dt><dd>Alex D'Elia (251021780) </dd>
+<dd>
+Huda Mukhtar (251030469)</dd></dl>
+<p>This class uses the Covid-19 apis to retrieve data and implement the important Covid functions. Each of these functions are responsible for retrieving and parsing json data from the Covid APIs. These functions are used in the main class to fetch data for tweets gets the size of the data from the GET request made by curl </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ptr</td><td>returned data pointer </td></tr>
     <tr><td class="paramname">size</td><td>size of the data item </td></tr>

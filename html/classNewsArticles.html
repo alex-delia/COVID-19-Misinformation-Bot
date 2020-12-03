@@ -67,16 +67,25 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>This class uses libcurl to get information from the NewsAPI.  
+ <a href="classNewsArticles.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="newsArticles_8h_source.html">newsArticles.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad9983ac560326caa13cf95a1f8d5a13f"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNewsArticles.html#ad9983ac560326caa13cf95a1f8d5a13f">write_to_string</a> (void *ptr, size_t size, size_t count, void *stream)</td></tr>
+<tr class="memdesc:ad9983ac560326caa13cf95a1f8d5a13f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class uses libcurl to get information from the NewsAPI.  <a href="#ad9983ac560326caa13cf95a1f8d5a13f">More...</a><br /></td></tr>
 <tr class="separator:ad9983ac560326caa13cf95a1f8d5a13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa7326d645febbc27538206dc0ca3f5b"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNewsArticles.html#afa7326d645febbc27538206dc0ca3f5b">getNewsArticles</a> (string hashtag)</td></tr>
 <tr class="separator:afa7326d645febbc27538206dc0ca3f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class uses libcurl to get information from the NewsAPI. </p>
+<p><a class="el" href="newsArticles_8h.html">newsArticles.h</a>/newsArticles.cpp</p>
+<dl class="section author"><dt>Author</dt><dd>Janki Chaudhari (251004226)</dd></dl>
+<p>This class uses libcurl which fetches information from News API gets the latest news in canada corrosponding to the key word. the function getNewsArticles returns the link to the top news article corrosponding to the hash tag in the tweet </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="afa7326d645febbc27538206dc0ca3f5b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa7326d645febbc27538206dc0ca3f5b">&#9670;&nbsp;</a></span>getNewsArticles()</h2>
 
@@ -100,6 +109,13 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>the Constructor fetches articles from the news API coorosponding to a particular tweet and returns it to main </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hashtag</td><td>gets the associated hashtag from the tweet and gets the corrosponding articles </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>url to the most relevant news article from the NewsAPI </dd></dl>
 
 </div>
 </div>
@@ -148,6 +164,20 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>This class uses libcurl to get information from the NewsAPI. </p>
+<p><a class="el" href="newsArticles_8h.html">newsArticles.h</a>/newsArticles.cpp</p>
+<dl class="section author"><dt>Author</dt><dd>Janki Chaudhari (251004226)</dd></dl>
+<p>This class uses libcurl which fetches information from News API gets the latest news in canada corrosponding to the key word.gets the size of the data from the GET request made by curl </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptr</td><td>returned data pointer </td></tr>
+    <tr><td class="paramname">size</td><td>size of the data item </td></tr>
+    <tr><td class="paramname">count</td><td>the number of the data items </td></tr>
+    <tr><td class="paramname">stream</td><td>pointer to store the data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of bytes that the data is (unsized integral type) A callback function called by libcurl so that the received data can be collected in a single buffer </dd></dl>
 
 </div>
 </div>

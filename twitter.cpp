@@ -21,6 +21,8 @@ using namespace std;
  */
 
 /**
+ * @brief Constructs basic twitter object
+ * 
  * Constructs basic twitter object and sets all the proper authentication tokens so we can make calls to the API
  */
 Twitter::Twitter(){

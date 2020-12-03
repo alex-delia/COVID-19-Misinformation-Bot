@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="NewsArticles",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNewsArticles.html"];
+  Node0 [label="NewsArticles",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNewsArticles.html",tooltip="This class uses libcurl to get information from the NewsAPI. "];
 }
