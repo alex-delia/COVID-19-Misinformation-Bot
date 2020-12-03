@@ -31,7 +31,9 @@ Twitter::Twitter(){
 }
 
 /**
- * sends a tweet for the twitter bot to post
+ * @brief sends a tweet for the twitter bot to post
+ * 
+ * Using Twitter API, the bot tweets the text given in the method.
  * 
  * @param input the text to be contained in the tweet
  */
@@ -54,7 +56,9 @@ void Twitter::sendTweet(string input)
 }
 
 /**
- * replies to any given tweet using the twitter bot
+ * @brief replies to any given tweet using the twitter bot
+ * 
+ * Using the Twitter API, the bot replies to the tweet with the ID given
  * 
  * @param input the text to be contained in the reply
  * @param id the id of the tweet you wish to reply to
@@ -78,7 +82,9 @@ void Twitter::sendReply(string input, string id)
 }
 
 /**
- * retrieves the handle of user who posted any given tweet
+ * @brief retrieves the handle of user who posted any given tweet
+ * 
+ * Using the Twitter API, this method finds the tweet with the given ID and returns the handle of the user who tweeted it.
  * 
  * @param id the id of the tweet you wish to find the sender of
  * @return the twitter handle of the user who posted the tweet, contained in a string
@@ -104,7 +110,9 @@ string Twitter::getSenderOfTweet(string id)
 }
 
 /**
- * checks if a tweet is a retweet, as supposed to a quote tweet or a normal tweet
+ * @brief checks if a tweet is a retweet
+ * 
+ * Since a retweet cannot be replied to, this method checks if the tweet is a retweet.
  * 
  * @param id the id of the tweet in question
  * @returns boolean containing whether or not the tweet is a retweet
@@ -129,7 +137,9 @@ bool Twitter::isRetweet(string id)
 }
 
 /**
- * searches for a relevant tweet based on some query. returns the first tweet that is not a retweet.
+ * @brief searches for a relevant tweet based on some query
+ * 
+ * Uses the Twitter API to search for the most recent tweet that matches the query, also ignores any retweets.
  * 
  * @param input string used to query for tweets 
  * @returns the id of the found tweet
