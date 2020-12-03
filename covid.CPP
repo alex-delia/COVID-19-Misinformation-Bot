@@ -6,11 +6,28 @@
 #include <ctime>
 #include "json.hpp"
 #include <typeinfo>
+/** covid.h/covid.cpp
+ * @brief this class communicates with multiple Covid-19 APIs to provide relevant methods
+ * @author Alex D'Elia (251021780)
+ * @author Huda Mukhtar (251030469)
+ * 
+ * This class uses the Covid-19 apis to retrieve data and implement the important Covid functions. Each of these functions
+ *  are responsible for retrieving and parsing json data from the Covid APIs. These functions are used in the main class to
+ * fetch data for tweets 
+ */
 
 // for convenience
 using json = nlohmann::json;
 using namespace std;
 
+/** @brief gets the size of the data from the GET request made by curl
+* @param ptr returned data
+* @param size size of the data item
+* @param count the number of the data items
+* @param stream
+* @return the number of bytes that the data is (unsized integral type)
+*A callback function called by libcurl so that the received data can be collected in a single buffer
+*/
 size_t covid::write_to_string(void *ptr, size_t size, size_t count, void *stream) {
   ((string*)stream)->append((char*)ptr, 0, size*count);
 return size*count;
@@ -68,6 +85,7 @@ string covid::getWorldData()
   curl = curl_easy_init();
 
   if(curl) {
+
     string parsedResponse;
     curl_easy_setopt(curl, CURLOPT_URL, "https://api.covid19tracker.ca/summary");
     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_to_string);
@@ -117,9 +135,12 @@ string covid::getWorldData()
     ltm->tm_mday = 1;
     ltm->tm_mon = 10;
 
+    //checks if it is the first day of the month
+    //If it is not the first day, the current date is calculated normally
     if(ltm->tm_mday != 1)
       currentDate = to_string(ltm->tm_year + 1900) + "-" + to_string(ltm->tm_mon + 1) + "-" + to_string(ltm->tm_mday-1);
     else
+    //if it is the first day of the month, we must determine how many days were in the last month to properly get the date
     {
       int month;
       int day;
@@ -250,12 +271,15 @@ string covid::getWorldData()
     time_t now = time(0);
     tm *ltm = localtime(&now);
 
-    string weekAgo;
-
+    string weekAgo  ;
+    //checks if it has been more than 7 days in the month
+    //if it is, the date is calculated by simply subtracting 7 from the day
     if(ltm->tm_mday > 7)
       weekAgo = to_string(ltm->tm_year + 1900) + "-" + to_string(ltm->tm_mon + 1) + "-" + to_string(ltm->tm_mday-7);
     else
     {
+      //if it has been less than 7 days in a month, we must determine how many days 
+      //were in the previous month to properly calculate the day in the last month
       int month;
       int day = ltm->tm_mday;
 
@@ -289,7 +313,6 @@ string covid::getWorldData()
           else
             day = 28 - (7-day);
       }
-
       weekAgo = to_string(ltm->tm_year + 1900) + "-" + to_string(month) + "-" + to_string(day);
     }
     
