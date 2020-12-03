@@ -13,11 +13,6 @@
 using json = nlohmann::json;
 using namespace std;
 
-<<<<<<< HEAD
-//! @brief Method to flag and respond to posts
-/*!
-    The flagTweet method takes a tweet that contains one of the 10 defined hashtags and reponds to it using official links to trusted COVID-19 information
-=======
 //! Method to flag and respond to posts
 /** 
  * @brief The flagTweet method takes a tweet that contains one of the 10 defined hashtags and 
@@ -25,7 +20,6 @@ using namespace std;
  * @param t the twitter object that allows the bot to run
  * @author Estelle Chung 
  * 
->>>>>>> 3b38b50dc49a52ba57e0333effdd79a256292e50
 */
 void flagTweet(Twitter t){
 
