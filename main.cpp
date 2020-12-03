@@ -43,7 +43,32 @@ void flagTweet(Twitter t){
     string tweet = ".@" + userName + ", This tweet has a claim or hashtag that contains misinformation!\nMake sure you are getting all of your facts from a trusted source. You can read more on this subject here: "+ newsArticles; /*!< creates reply to be posted */
 
     t.sendReply(tweet, tweetId); /*!< tweet the reply */
+}
 
+/** @brief Posts a new tweet to twitter
+   * 
+   * Uses the province based covid functions to retrieve data, then creates a new twitter object and sends out a tweet
+   */
+void postProvinces(){
+    Twitter twit_tests = Twitter(); /*!< set up twitter bot for posting about COVID-19 tests */
+
+    string ONTests = covid::getTests("ON");
+    string QCTests = covid::getTests("QC");
+    string BCTests = covid::getTests("BC");
+    string ABTests = covid::getTests("AB");
+    string SKTests = covid::getTests("SK");
+    string MNTests = covid::getTests("MN");
+    string NSTests = covid::getTests("NS");
+    string NBTests = covid::getTests("NB");
+    string PEITests = covid::getTests("PE");
+    string NLTests = covid::getTests("NL");
+    string NTTests = covid::getTests("NT");
+    string YKTests = covid::getTests("YK");
+    string NUTests = covid::getTests("NU");
+
+    twit_tests.sendTweet("Daily Province Change in Covid Testing:\nON: " + ONTests + "\nQC: " + QCTests + "\nBC: " + BCTests + "\nAB: " 
+    + ABTests + "\nSK: " + SKTests + "\nMN: " + MNTests + "\nNS: " + NSTests + "\nNB: " + NBTests + "\nPEI: " + PEITests 
+    + "\nNL: " + NLTests + "\nNT: " + NTTests + "\nYK: " + YKTests + "\nNU: " + NUTests);
 }
 //! Main
 /*!
@@ -53,15 +78,11 @@ int main()
 {
     Twitter twit = Twitter(); /*!< set up twitter bot */
 
-    Twitter twit_tests = Twitter(); /*!< set up twitter bot for posting about COVID-19 tests */
-
     Twitter twit_deaths_recoveries = Twitter(); /*!< set up twitter bot for posting about COVID-19 deaths & recoveries */
 
     Twitter twit_flag = Twitter(); /*!< set up twitter bot for flagging tweets */
 
     string worldData = covid::getWorldData(); /*!< COVID-19 data from around the world*/
-
-    string canadaTests = covid::getCanadaTests(); /*!< COVID-19 tests in Canada */
 
     string canadaDeaths = covid::getCanadaDeaths(); /*!< COVID-19 deaths in Canada */
 
@@ -81,9 +102,11 @@ int main()
 
     twit.sendTweet("There were " + worldData + " cases of COVID-19 today, globally"); /*!< Posts world COVID-19 case numbers*/
 
-    twit_tests.sendTweet("There were " + canadaTests + " COVID-19 tests performed today in Canada"); /*!< Posts Canada COVID-19 test numbers*/
-
     twit_deaths_recoveries.sendTweet("There were " + canadaDeaths + " COVID-19 deaths and " + canadaRecoveries + " COVID-19 recoveries today in Canada"); /*!< Posts Canada COVID-19 deaths and recoveries*/
+
+    twit.sendTweet("There were " + worldData + " cases of COVID-19 today, globally");
+
+    twit_deaths_recoveries.sendTweet("There were " + canadaDeaths + " COVID-19 deaths and " + canadaRecoveries + " COVID-19 recoveries today in Canada");
 
     twit.sendTweet("Check out this article: "+ newsArticles); /*!< Posts relevent COVID-19 news article URL*/
 
