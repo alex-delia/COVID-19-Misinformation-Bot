@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['parse_5ferror',['parse_error',['../classnlohmann_1_1detail_1_1lexer__base.html#aa3538cce439a2de6c7893e627b38c454a456e19aeafa334241c7ff3f589547f9d',1,'nlohmann::detail::lexer_base']]]
+  ['msgpack',['msgpack',['../namespacenlohmann_1_1detail.html#aa554fc6a11519e4f347deb25a9f0db40ac40d516627022a54003ac2b74a82688a',1,'nlohmann::detail']]]
 ];

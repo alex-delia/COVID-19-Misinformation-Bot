@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['json',['json',['../namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474',1,'nlohmann']]],
-  ['json_5fpointer',['json_pointer',['../classnlohmann_1_1basic__json.html#aa8f1f93b32da01b42413643be32b2c27',1,'nlohmann::basic_json']]],
-  ['json_5fsax_5ft',['json_sax_t',['../classnlohmann_1_1basic__json.html#a164b1094a1a9feb54e400d8510bb0b12',1,'nlohmann::basic_json']]]
+  ['get_5ftemplate_5ffunction',['get_template_function',['../namespacenlohmann_1_1detail.html#ab4d22cdb6521ee3508db496dea66711e',1,'nlohmann::detail']]]
 ];

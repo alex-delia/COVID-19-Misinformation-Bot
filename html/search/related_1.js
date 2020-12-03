@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['swap',['swap',['../classnlohmann_1_1basic__json.html#aee0ae36cbfb0336832ebc0374c3c7679',1,'nlohmann::basic_json']]]
+  ['basic_5fjson',['basic_json',['../classnlohmann_1_1json__pointer.html#ada3100cdb8700566051828f1355fa745',1,'nlohmann::json_pointer']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Covid Misinformation Twitter Bot: nlohmann::detail::iterator_input_adapter&lt; IteratorType &gt; Class Template Reference</title>
+<title>COVID-19 Misinformation Twitter Bot: nlohmann::detail::iterator_input_adapter&lt; IteratorType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Covid Misinformation Twitter Bot
+   <div id="projectname">COVID-19 Misinformation Twitter Bot
    </div>
-   <div id="projectbrief">Twitter bot created by Western Students to find and correct misinformation on the Twitter Platform</div>
+   <div id="projectbrief">Twitter bot for finding and correcting fake news and misinformation on the twitter platform</div>
   </td>
  </tr>
  </tbody>
@@ -74,44 +74,226 @@ $(function() {
 <div class="title">nlohmann::detail::iterator_input_adapter&lt; IteratorType &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="json_8hpp_source.html">json.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a7cc60e68767005322ab4b692c9dff283"><td class="memItemLeft" align="right" valign="top"><a id="a7cc60e68767005322ab4b692c9dff283"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>char_type</b> = typename std::iterator_traits&lt; IteratorType &gt;::value_type</td></tr>
+<tr class="memitem:a7cc60e68767005322ab4b692c9dff283"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iterator__input__adapter.html#a7cc60e68767005322ab4b692c9dff283">char_type</a> = typename std::iterator_traits&lt; IteratorType &gt;::value_type</td></tr>
 <tr class="separator:a7cc60e68767005322ab4b692c9dff283"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9423d7166b9e3092f149266acd064ba7"><td class="memItemLeft" align="right" valign="top"><a id="a9423d7166b9e3092f149266acd064ba7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>iterator_input_adapter</b> (IteratorType first, IteratorType last)</td></tr>
+<tr class="memitem:a9423d7166b9e3092f149266acd064ba7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iterator__input__adapter.html#a9423d7166b9e3092f149266acd064ba7">iterator_input_adapter</a> (IteratorType first, IteratorType last)</td></tr>
 <tr class="separator:a9423d7166b9e3092f149266acd064ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01706f07681df083c2174d236ff3d643"><td class="memItemLeft" align="right" valign="top"><a id="a01706f07681df083c2174d236ff3d643"></a>
-std::char_traits&lt; char_type &gt;::int_type&#160;</td><td class="memItemRight" valign="bottom"><b>get_character</b> ()</td></tr>
+<tr class="memitem:a01706f07681df083c2174d236ff3d643"><td class="memItemLeft" align="right" valign="top">std::char_traits&lt; <a class="el" href="classnlohmann_1_1detail_1_1iterator__input__adapter.html#a7cc60e68767005322ab4b692c9dff283">char_type</a> &gt;::int_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iterator__input__adapter.html#a01706f07681df083c2174d236ff3d643">get_character</a> ()</td></tr>
 <tr class="separator:a01706f07681df083c2174d236ff3d643"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ace7ba18b59cde50cbc53687034f649be"><td class="memItemLeft" align="right" valign="top"><a id="ace7ba18b59cde50cbc53687034f649be"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> () const</td></tr>
+<tr class="memitem:ace7ba18b59cde50cbc53687034f649be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iterator__input__adapter.html#ace7ba18b59cde50cbc53687034f649be">empty</a> () const</td></tr>
 <tr class="separator:ace7ba18b59cde50cbc53687034f649be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a8abccad27590d381a94e474b16161938"><td class="memItemLeft" align="right" valign="top"><a id="a8abccad27590d381a94e474b16161938"></a>
-IteratorType&#160;</td><td class="memItemRight" valign="bottom"><b>current</b></td></tr>
+<tr class="memitem:a8abccad27590d381a94e474b16161938"><td class="memItemLeft" align="right" valign="top">IteratorType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iterator__input__adapter.html#a8abccad27590d381a94e474b16161938">current</a></td></tr>
 <tr class="separator:a8abccad27590d381a94e474b16161938"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8aa29994ca6fdc0f8c96abf9151738ab"><td class="memItemLeft" align="right" valign="top"><a id="a8aa29994ca6fdc0f8c96abf9151738ab"></a>
-IteratorType&#160;</td><td class="memItemRight" valign="bottom"><b>end</b></td></tr>
+<tr class="memitem:a8aa29994ca6fdc0f8c96abf9151738ab"><td class="memItemLeft" align="right" valign="top">IteratorType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iterator__input__adapter.html#a8aa29994ca6fdc0f8c96abf9151738ab">end</a></td></tr>
 <tr class="separator:a8aa29994ca6fdc0f8c96abf9151738ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ab86106ba230f1542b94dcd96e6ab3221"><td class="memTemplParams" colspan="2"><a id="ab86106ba230f1542b94dcd96e6ab3221"></a>
-template&lt;typename BaseInputAdapter , size_t T&gt; </td></tr>
-<tr class="memitem:ab86106ba230f1542b94dcd96e6ab3221"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><b>wide_string_input_helper</b></td></tr>
+<tr class="memitem:ab86106ba230f1542b94dcd96e6ab3221"><td class="memTemplParams" colspan="2">template&lt;typename BaseInputAdapter , size_t T&gt; </td></tr>
+<tr class="memitem:ab86106ba230f1542b94dcd96e6ab3221"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iterator__input__adapter.html#ab86106ba230f1542b94dcd96e6ab3221">wide_string_input_helper</a></td></tr>
 <tr class="separator:ab86106ba230f1542b94dcd96e6ab3221"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a7cc60e68767005322ab4b692c9dff283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cc60e68767005322ab4b692c9dff283">&#9670;&nbsp;</a></span>char_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename IteratorType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classnlohmann_1_1detail_1_1iterator__input__adapter.html">nlohmann::detail::iterator_input_adapter</a>&lt; IteratorType &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iterator__input__adapter.html#a7cc60e68767005322ab4b692c9dff283">char_type</a> =  typename std::iterator_traits&lt;IteratorType&gt;::value_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9423d7166b9e3092f149266acd064ba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9423d7166b9e3092f149266acd064ba7">&#9670;&nbsp;</a></span>iterator_input_adapter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename IteratorType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iterator__input__adapter.html">nlohmann::detail::iterator_input_adapter</a>&lt; IteratorType &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iterator__input__adapter.html">iterator_input_adapter</a> </td>
+          <td>(</td>
+          <td class="paramtype">IteratorType&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IteratorType&#160;</td>
+          <td class="paramname"><em>last</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ace7ba18b59cde50cbc53687034f649be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace7ba18b59cde50cbc53687034f649be">&#9670;&nbsp;</a></span>empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename IteratorType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classnlohmann_1_1detail_1_1iterator__input__adapter.html">nlohmann::detail::iterator_input_adapter</a>&lt; IteratorType &gt;::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01706f07681df083c2174d236ff3d643"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01706f07681df083c2174d236ff3d643">&#9670;&nbsp;</a></span>get_character()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename IteratorType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::char_traits&lt;<a class="el" href="classnlohmann_1_1detail_1_1iterator__input__adapter.html#a7cc60e68767005322ab4b692c9dff283">char_type</a>&gt;::int_type <a class="el" href="classnlohmann_1_1detail_1_1iterator__input__adapter.html">nlohmann::detail::iterator_input_adapter</a>&lt; IteratorType &gt;::get_character </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="ab86106ba230f1542b94dcd96e6ab3221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab86106ba230f1542b94dcd96e6ab3221">&#9670;&nbsp;</a></span>wide_string_input_helper</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename IteratorType &gt; </div>
+<div class="memtemplate">
+template&lt;typename BaseInputAdapter , size_t T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend struct <a class="el" href="structnlohmann_1_1detail_1_1wide__string__input__helper.html">wide_string_input_helper</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8abccad27590d381a94e474b16161938"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8abccad27590d381a94e474b16161938">&#9670;&nbsp;</a></span>current</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename IteratorType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IteratorType <a class="el" href="classnlohmann_1_1detail_1_1iterator__input__adapter.html">nlohmann::detail::iterator_input_adapter</a>&lt; IteratorType &gt;::current</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8aa29994ca6fdc0f8c96abf9151738ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aa29994ca6fdc0f8c96abf9151738ab">&#9670;&nbsp;</a></span>end</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename IteratorType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IteratorType <a class="el" href="classnlohmann_1_1detail_1_1iterator__input__adapter.html">nlohmann::detail::iterator_input_adapter</a>&lt; IteratorType &gt;::end</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="json_8hpp_source.html">json.hpp</a></li>
 </ul>

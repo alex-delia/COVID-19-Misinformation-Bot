@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Covid Misinformation Twitter Bot: nlohmann::detail::iter_impl&lt; BasicJsonType &gt; Class Template Reference</title>
+<title>COVID-19 Misinformation Twitter Bot: nlohmann::detail::iter_impl&lt; BasicJsonType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Covid Misinformation Twitter Bot
+   <div id="projectname">COVID-19 Misinformation Twitter Bot
    </div>
-   <div id="projectbrief">Twitter bot created by Western Students to find and correct misinformation on the Twitter Platform</div>
+   <div id="projectbrief">Twitter bot for finding and correcting fake news and misinformation on the twitter platform</div>
   </td>
  </tr>
  </tbody>
@@ -91,21 +91,17 @@ Collaboration diagram for nlohmann::detail::iter_impl&lt; BasicJsonType &gt;:</d
 Public Types</h2></td></tr>
 <tr class="memitem:ad9e091f5c70b34b5b1abc1ab15fd9106"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ad9e091f5c70b34b5b1abc1ab15fd9106">iterator_category</a> = std::bidirectional_iterator_tag</td></tr>
 <tr class="separator:ad9e091f5c70b34b5b1abc1ab15fd9106"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab35586a44f2222272c5346baa3013f67"><td class="memItemLeft" align="right" valign="top"><a id="ab35586a44f2222272c5346baa3013f67"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ab35586a44f2222272c5346baa3013f67">value_type</a> = typename BasicJsonType::value_type</td></tr>
-<tr class="memdesc:ab35586a44f2222272c5346baa3013f67"><td class="mdescLeft">&#160;</td><td class="mdescRight">the type of the values when the iterator is dereferenced <br /></td></tr>
+<tr class="memitem:ab35586a44f2222272c5346baa3013f67"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ab35586a44f2222272c5346baa3013f67">value_type</a> = typename BasicJsonType::value_type</td></tr>
+<tr class="memdesc:ab35586a44f2222272c5346baa3013f67"><td class="mdescLeft">&#160;</td><td class="mdescRight">the type of the values when the iterator is dereferenced  <a href="#ab35586a44f2222272c5346baa3013f67">More...</a><br /></td></tr>
 <tr class="separator:ab35586a44f2222272c5346baa3013f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f7ea9f7022850809c60fc3263775840"><td class="memItemLeft" align="right" valign="top"><a id="a2f7ea9f7022850809c60fc3263775840"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a2f7ea9f7022850809c60fc3263775840">difference_type</a> = typename BasicJsonType::difference_type</td></tr>
-<tr class="memdesc:a2f7ea9f7022850809c60fc3263775840"><td class="mdescLeft">&#160;</td><td class="mdescRight">a type to represent differences between iterators <br /></td></tr>
+<tr class="memitem:a2f7ea9f7022850809c60fc3263775840"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a2f7ea9f7022850809c60fc3263775840">difference_type</a> = typename BasicJsonType::difference_type</td></tr>
+<tr class="memdesc:a2f7ea9f7022850809c60fc3263775840"><td class="mdescLeft">&#160;</td><td class="mdescRight">a type to represent differences between iterators  <a href="#a2f7ea9f7022850809c60fc3263775840">More...</a><br /></td></tr>
 <tr class="separator:a2f7ea9f7022850809c60fc3263775840"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69e52f890ce8c556fd68ce109e24b360"><td class="memItemLeft" align="right" valign="top"><a id="a69e52f890ce8c556fd68ce109e24b360"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a69e52f890ce8c556fd68ce109e24b360">pointer</a> = typename std::conditional&lt; std::is_const&lt; BasicJsonType &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ab447c50354c6611fa2ae0100ac17845c">value</a>, typename BasicJsonType::const_pointer, typename BasicJsonType::pointer &gt;::type</td></tr>
-<tr class="memdesc:a69e52f890ce8c556fd68ce109e24b360"><td class="mdescLeft">&#160;</td><td class="mdescRight">defines a pointer to the type iterated over (value_type) <br /></td></tr>
+<tr class="memitem:a69e52f890ce8c556fd68ce109e24b360"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a69e52f890ce8c556fd68ce109e24b360">pointer</a> = typename std::conditional&lt; std::is_const&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ab447c50354c6611fa2ae0100ac17845c">value</a>, typename BasicJsonType::const_pointer, typename BasicJsonType::pointer &gt;::type</td></tr>
+<tr class="memdesc:a69e52f890ce8c556fd68ce109e24b360"><td class="mdescLeft">&#160;</td><td class="mdescRight">defines a pointer to the type iterated over (value_type)  <a href="#a69e52f890ce8c556fd68ce109e24b360">More...</a><br /></td></tr>
 <tr class="separator:a69e52f890ce8c556fd68ce109e24b360"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5be8001be099c6b82310f4d387b953ce"><td class="memItemLeft" align="right" valign="top"><a id="a5be8001be099c6b82310f4d387b953ce"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a5be8001be099c6b82310f4d387b953ce">reference</a> = typename std::conditional&lt; std::is_const&lt; BasicJsonType &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ab447c50354c6611fa2ae0100ac17845c">value</a>, typename BasicJsonType::const_reference, typename BasicJsonType::reference &gt;::type</td></tr>
-<tr class="memdesc:a5be8001be099c6b82310f4d387b953ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">defines a reference to the type iterated over (value_type) <br /></td></tr>
+<tr class="memitem:a5be8001be099c6b82310f4d387b953ce"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a5be8001be099c6b82310f4d387b953ce">reference</a> = typename std::conditional&lt; std::is_const&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ab447c50354c6611fa2ae0100ac17845c">value</a>, typename BasicJsonType::const_reference, typename BasicJsonType::reference &gt;::type</td></tr>
+<tr class="memdesc:a5be8001be099c6b82310f4d387b953ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">defines a reference to the type iterated over (value_type)  <a href="#a5be8001be099c6b82310f4d387b953ce">More...</a><br /></td></tr>
 <tr class="separator:a5be8001be099c6b82310f4d387b953ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -116,16 +112,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a88a00484ac201c52fc5f613d88a2918b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a88a00484ac201c52fc5f613d88a2918b">iter_impl</a> (<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a69e52f890ce8c556fd68ce109e24b360">pointer</a> <a class="el" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985aa8cfde6331bd59eb2ac96f8911c4b666">object</a>) noexcept</td></tr>
 <tr class="memdesc:a88a00484ac201c52fc5f613d88a2918b"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor for a given JSON instance  <a href="#a88a00484ac201c52fc5f613d88a2918b">More...</a><br /></td></tr>
 <tr class="separator:a88a00484ac201c52fc5f613d88a2918b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71f84fb6e009619f12972bcf9002b8cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a71f84fb6e009619f12972bcf9002b8cd">iter_impl</a> (const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; const BasicJsonType &gt; &amp;other) noexcept</td></tr>
+<tr class="memitem:a71f84fb6e009619f12972bcf9002b8cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a71f84fb6e009619f12972bcf9002b8cd">iter_impl</a> (const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt; &amp;other) noexcept</td></tr>
 <tr class="memdesc:a71f84fb6e009619f12972bcf9002b8cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">const copy constructor  <a href="#a71f84fb6e009619f12972bcf9002b8cd">More...</a><br /></td></tr>
 <tr class="separator:a71f84fb6e009619f12972bcf9002b8cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a5cd7864a8f848ef107d3f5a330f5e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a9a5cd7864a8f848ef107d3f5a330f5e7">operator=</a> (const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; const BasicJsonType &gt; &amp;other) noexcept</td></tr>
+<tr class="memitem:a9a5cd7864a8f848ef107d3f5a330f5e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a9a5cd7864a8f848ef107d3f5a330f5e7">operator=</a> (const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt; &amp;other) noexcept</td></tr>
 <tr class="memdesc:a9a5cd7864a8f848ef107d3f5a330f5e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">converting assignment  <a href="#a9a5cd7864a8f848ef107d3f5a330f5e7">More...</a><br /></td></tr>
 <tr class="separator:a9a5cd7864a8f848ef107d3f5a330f5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a867f7eb55091be31b013adb3e46816d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a867f7eb55091be31b013adb3e46816d3">iter_impl</a> (const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; typename std::remove_const&lt; BasicJsonType &gt;::type &gt; &amp;other) noexcept</td></tr>
+<tr class="memitem:a867f7eb55091be31b013adb3e46816d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a867f7eb55091be31b013adb3e46816d3">iter_impl</a> (const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; typename std::remove_const&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::type &gt; &amp;other) noexcept</td></tr>
 <tr class="memdesc:a867f7eb55091be31b013adb3e46816d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">converting constructor  <a href="#a867f7eb55091be31b013adb3e46816d3">More...</a><br /></td></tr>
 <tr class="separator:a867f7eb55091be31b013adb3e46816d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7159ed1cfe7c423a2baef8bea0c94509"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a7159ed1cfe7c423a2baef8bea0c94509">operator=</a> (const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; typename std::remove_const&lt; BasicJsonType &gt;::type &gt; &amp;other) noexcept</td></tr>
+<tr class="memitem:a7159ed1cfe7c423a2baef8bea0c94509"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a7159ed1cfe7c423a2baef8bea0c94509">operator=</a> (const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; typename std::remove_const&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::type &gt; &amp;other) noexcept</td></tr>
 <tr class="memdesc:a7159ed1cfe7c423a2baef8bea0c94509"><td class="mdescLeft">&#160;</td><td class="mdescRight">converting assignment  <a href="#a7159ed1cfe7c423a2baef8bea0c94509">More...</a><br /></td></tr>
 <tr class="separator:a7159ed1cfe7c423a2baef8bea0c94509"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ca57856d9bba54a5fc51cee891de827"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a5be8001be099c6b82310f4d387b953ce">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a5ca57856d9bba54a5fc51cee891de827">operator*</a> () const</td></tr>
@@ -191,40 +187,33 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:ab9a9598052e83fa14a2288e56d5dda7c"><td class="memItemLeft" align="right" valign="top"><a id="ab9a9598052e83fa14a2288e56d5dda7c"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>object_t</b> = typename BasicJsonType::object_t</td></tr>
+<tr class="memitem:ab9a9598052e83fa14a2288e56d5dda7c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ab9a9598052e83fa14a2288e56d5dda7c">object_t</a> = typename BasicJsonType::object_t</td></tr>
 <tr class="separator:ab9a9598052e83fa14a2288e56d5dda7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef02cf75b1cb199286fd2f666c60e38e"><td class="memItemLeft" align="right" valign="top"><a id="aef02cf75b1cb199286fd2f666c60e38e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>array_t</b> = typename BasicJsonType::array_t</td></tr>
+<tr class="memitem:aef02cf75b1cb199286fd2f666c60e38e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#aef02cf75b1cb199286fd2f666c60e38e">array_t</a> = typename BasicJsonType::array_t</td></tr>
 <tr class="separator:aef02cf75b1cb199286fd2f666c60e38e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a5d5f92c7f6848814bc82cf7e4e541820"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a5d5f92c7f6848814bc82cf7e4e541820">set_begin</a> () noexcept</td></tr>
+<tr class="memitem:a5d5f92c7f6848814bc82cf7e4e541820"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacenlohmann_1_1detail.html#a59fca69799f6b9e366710cb9043aa77d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a5d5f92c7f6848814bc82cf7e4e541820">set_begin</a> () noexcept</td></tr>
 <tr class="memdesc:a5d5f92c7f6848814bc82cf7e4e541820"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the iterator to the first value  <a href="#a5d5f92c7f6848814bc82cf7e4e541820">More...</a><br /></td></tr>
 <tr class="separator:a5d5f92c7f6848814bc82cf7e4e541820"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23e50ad4c13aa62d9ac7f60a123823ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a23e50ad4c13aa62d9ac7f60a123823ee">set_end</a> () noexcept</td></tr>
+<tr class="memitem:a23e50ad4c13aa62d9ac7f60a123823ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacenlohmann_1_1detail.html#a59fca69799f6b9e366710cb9043aa77d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a23e50ad4c13aa62d9ac7f60a123823ee">set_end</a> () noexcept</td></tr>
 <tr class="memdesc:a23e50ad4c13aa62d9ac7f60a123823ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the iterator past the last value  <a href="#a23e50ad4c13aa62d9ac7f60a123823ee">More...</a><br /></td></tr>
 <tr class="separator:a23e50ad4c13aa62d9ac7f60a123823ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:abf18f18793f84b0222aebb5a2a87da7a"><td class="memItemLeft" align="right" valign="top"><a id="abf18f18793f84b0222aebb5a2a87da7a"></a>
-friend&#160;</td><td class="memItemRight" valign="bottom"><b>BasicJsonType</b></td></tr>
+<tr class="memitem:abf18f18793f84b0222aebb5a2a87da7a"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a></td></tr>
 <tr class="separator:abf18f18793f84b0222aebb5a2a87da7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28328d17a18d9754c89c5c8159677a6f"><td class="memItemLeft" align="right" valign="top"><a id="a28328d17a18d9754c89c5c8159677a6f"></a>
-friend&#160;</td><td class="memItemRight" valign="bottom"><b>iteration_proxy&lt; iter_impl &gt;</b></td></tr>
+<tr class="memitem:a28328d17a18d9754c89c5c8159677a6f"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a28328d17a18d9754c89c5c8159677a6f">iteration_proxy&lt; iter_impl &gt;</a></td></tr>
 <tr class="separator:a28328d17a18d9754c89c5c8159677a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac501dc2374b4d17a884fc9a656e80d5a"><td class="memItemLeft" align="right" valign="top"><a id="ac501dc2374b4d17a884fc9a656e80d5a"></a>
-friend&#160;</td><td class="memItemRight" valign="bottom"><b>iteration_proxy_value&lt; iter_impl &gt;</b></td></tr>
+<tr class="memitem:ac501dc2374b4d17a884fc9a656e80d5a"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ac501dc2374b4d17a884fc9a656e80d5a">iteration_proxy_value&lt; iter_impl &gt;</a></td></tr>
 <tr class="separator:ac501dc2374b4d17a884fc9a656e80d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca84f84be598bdfaaddd23d928c42bbb"><td class="memItemLeft" align="right" valign="top"><a id="aca84f84be598bdfaaddd23d928c42bbb"></a>
-<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a69e52f890ce8c556fd68ce109e24b360">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#aca84f84be598bdfaaddd23d928c42bbb">m_object</a> = nullptr</td></tr>
-<tr class="memdesc:aca84f84be598bdfaaddd23d928c42bbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">associated JSON instance <br /></td></tr>
+<tr class="memitem:aca84f84be598bdfaaddd23d928c42bbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a69e52f890ce8c556fd68ce109e24b360">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#aca84f84be598bdfaaddd23d928c42bbb">m_object</a> = nullptr</td></tr>
+<tr class="memdesc:aca84f84be598bdfaaddd23d928c42bbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">associated JSON instance  <a href="#aca84f84be598bdfaaddd23d928c42bbb">More...</a><br /></td></tr>
 <tr class="separator:aca84f84be598bdfaaddd23d928c42bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a86a7c0d4af0cc4ab345b6f0e13cdfa"><td class="memItemLeft" align="right" valign="top"><a id="a8a86a7c0d4af0cc4ab345b6f0e13cdfa"></a>
-<a class="el" href="structnlohmann_1_1detail_1_1internal__iterator.html">internal_iterator</a>&lt; typename std::remove_const&lt; BasicJsonType &gt;::type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a8a86a7c0d4af0cc4ab345b6f0e13cdfa">m_it</a> {}</td></tr>
-<tr class="memdesc:a8a86a7c0d4af0cc4ab345b6f0e13cdfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">the actual iterator of the associated instance <br /></td></tr>
+<tr class="memitem:a8a86a7c0d4af0cc4ab345b6f0e13cdfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnlohmann_1_1detail_1_1internal__iterator.html">internal_iterator</a>&lt; typename std::remove_const&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a8a86a7c0d4af0cc4ab345b6f0e13cdfa">m_it</a> {}</td></tr>
+<tr class="memdesc:a8a86a7c0d4af0cc4ab345b6f0e13cdfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">the actual iterator of the associated instance  <a href="#a8a86a7c0d4af0cc4ab345b6f0e13cdfa">More...</a><br /></td></tr>
 <tr class="separator:a8a86a7c0d4af0cc4ab345b6f0e13cdfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -244,6 +233,48 @@ class nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</h3>
 </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>version 1.0.0, simplified in version 2.0.9, change to bidirectional iterators in version 3.0.0 (see <a href="https://github.com/nlohmann/json/issues/593">https://github.com/nlohmann/json/issues/593</a>) </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aef02cf75b1cb199286fd2f666c60e38e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef02cf75b1cb199286fd2f666c60e38e">&#9670;&nbsp;</a></span>array_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#aef02cf75b1cb199286fd2f666c60e38e">array_t</a> =  typename BasicJsonType::array_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f7ea9f7022850809c60fc3263775840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f7ea9f7022850809c60fc3263775840">&#9670;&nbsp;</a></span>difference_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a2f7ea9f7022850809c60fc3263775840">difference_type</a> =  typename BasicJsonType::difference_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>a type to represent differences between iterators </p>
+
+</div>
+</div>
 <a id="ad9e091f5c70b34b5b1abc1ab15fd9106"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9e091f5c70b34b5b1abc1ab15fd9106">&#9670;&nbsp;</a></span>iterator_category</h2>
 
@@ -253,11 +284,89 @@ class nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</h3>
 template&lt;typename BasicJsonType&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ad9e091f5c70b34b5b1abc1ab15fd9106">iterator_category</a> =  std::bidirectional_iterator_tag</td>
+          <td class="memname">using <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ad9e091f5c70b34b5b1abc1ab15fd9106">iterator_category</a> =  std::bidirectional_iterator_tag</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>The std::iterator class template (used as a base class to provide typedefs) is deprecated in C++17. The C++ Standard has never required user-defined iterators to derive from std::iterator. A user-defined iterator should provide publicly accessible typedefs named iterator_category, value_type, difference_type, pointer, and reference. Note that value_type is required to be non-const, even for constant iterators. </p>
+
+</div>
+</div>
+<a id="ab9a9598052e83fa14a2288e56d5dda7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9a9598052e83fa14a2288e56d5dda7c">&#9670;&nbsp;</a></span>object_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ab9a9598052e83fa14a2288e56d5dda7c">object_t</a> =  typename BasicJsonType::object_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69e52f890ce8c556fd68ce109e24b360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69e52f890ce8c556fd68ce109e24b360">&#9670;&nbsp;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a69e52f890ce8c556fd68ce109e24b360">pointer</a> =  typename std::conditional&lt;std::is_const&lt;<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a>&gt;::<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ab447c50354c6611fa2ae0100ac17845c">value</a>, typename BasicJsonType::const_pointer, typename BasicJsonType::pointer&gt;::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>defines a pointer to the type iterated over (value_type) </p>
+
+</div>
+</div>
+<a id="a5be8001be099c6b82310f4d387b953ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5be8001be099c6b82310f4d387b953ce">&#9670;&nbsp;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a5be8001be099c6b82310f4d387b953ce">reference</a> =  typename std::conditional&lt;std::is_const&lt;<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a>&gt;::<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ab447c50354c6611fa2ae0100ac17845c">value</a>, typename BasicJsonType::const_reference, typename BasicJsonType::reference&gt;::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>defines a reference to the type iterated over (value_type) </p>
+
+</div>
+</div>
+<a id="ab35586a44f2222272c5346baa3013f67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab35586a44f2222272c5346baa3013f67">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ab35586a44f2222272c5346baa3013f67">value_type</a> =  typename BasicJsonType::value_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the type of the values when the iterator is dereferenced </p>
 
 </div>
 </div>
@@ -274,7 +383,7 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; typename std::conditional&lt; std::is_const&lt; BasicJsonType &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ab447c50354c6611fa2ae0100ac17845c">value</a>, typename std::remove_const&lt; BasicJsonType &gt;::type, const BasicJsonType &gt;::type &gt; </td>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; typename std::conditional&lt; std::is_const&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ab447c50354c6611fa2ae0100ac17845c">value</a>, typename std::remove_const&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::type, const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::type &gt; </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -304,7 +413,7 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a> </td>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a69e52f890ce8c556fd68ce109e24b360">pointer</a>&#160;</td>
           <td class="paramname"><em>object</em></td><td>)</td>
@@ -342,9 +451,9 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a> </td>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; const BasicJsonType &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
@@ -380,9 +489,9 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a> </td>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; typename std::remove_const&lt; BasicJsonType &gt;::type &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; typename std::remove_const&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::type &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
@@ -418,7 +527,7 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const object_t::key_type&amp; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::key </td>
+          <td class="memname">const object_t::key_type&amp; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::key </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -448,9 +557,9 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::operator!= </td>
+          <td class="memname">bool <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::operator!= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; BasicJsonType &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -479,7 +588,7 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a5be8001be099c6b82310f4d387b953ce">reference</a> <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::operator* </td>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a5be8001be099c6b82310f4d387b953ce">reference</a> <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::operator* </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -509,7 +618,7 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a> <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::operator+ </td>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a> <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::operator+ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a2f7ea9f7022850809c60fc3263775840">difference_type</a>&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
@@ -540,7 +649,7 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a> const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::operator++ </td>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a> const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::operator++ </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -571,7 +680,7 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&amp; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::operator++ </td>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&amp; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::operator++ </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -601,7 +710,7 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&amp; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::operator+= </td>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&amp; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::operator+= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a2f7ea9f7022850809c60fc3263775840">difference_type</a>&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
@@ -632,7 +741,7 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a> <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::operator- </td>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a> <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::operator- </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a2f7ea9f7022850809c60fc3263775840">difference_type</a>&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
@@ -663,9 +772,9 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a2f7ea9f7022850809c60fc3263775840">difference_type</a> <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::operator- </td>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a2f7ea9f7022850809c60fc3263775840">difference_type</a> <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::operator- </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; BasicJsonType &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -694,7 +803,7 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a> const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::operator-- </td>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a> const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::operator-- </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -725,7 +834,7 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&amp; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::operator-- </td>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&amp; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::operator-- </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -755,7 +864,7 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&amp; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::operator-= </td>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&amp; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::operator-= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a2f7ea9f7022850809c60fc3263775840">difference_type</a>&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
@@ -786,7 +895,7 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a69e52f890ce8c556fd68ce109e24b360">pointer</a> <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::operator-&gt; </td>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a69e52f890ce8c556fd68ce109e24b360">pointer</a> <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::operator-&gt; </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -816,9 +925,9 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::operator&lt; </td>
+          <td class="memname">bool <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::operator&lt; </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; BasicJsonType &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -847,9 +956,9 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::operator&lt;= </td>
+          <td class="memname">bool <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::operator&lt;= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; BasicJsonType &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -878,9 +987,9 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&amp; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::operator= </td>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&amp; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; const BasicJsonType &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
@@ -916,9 +1025,9 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&amp; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::operator= </td>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&amp; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; typename std::remove_const&lt; BasicJsonType &gt;::type &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; typename std::remove_const&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::type &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
@@ -954,9 +1063,9 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::operator== </td>
+          <td class="memname">bool <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; BasicJsonType &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -985,9 +1094,9 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::operator&gt; </td>
+          <td class="memname">bool <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::operator&gt; </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; BasicJsonType &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1016,9 +1125,9 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::operator&gt;= </td>
+          <td class="memname">bool <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::operator&gt;= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; BasicJsonType &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1047,7 +1156,7 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a5be8001be099c6b82310f4d387b953ce">reference</a> <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::operator[] </td>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a5be8001be099c6b82310f4d387b953ce">reference</a> <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::operator[] </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a2f7ea9f7022850809c60fc3263775840">difference_type</a>&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
@@ -1078,7 +1187,7 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::set_begin </td>
+          <td class="memname"><a class="el" href="namespacenlohmann_1_1detail.html#a59fca69799f6b9e366710cb9043aa77d">void</a> <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::set_begin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1108,7 +1217,7 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::set_end </td>
+          <td class="memname"><a class="el" href="namespacenlohmann_1_1detail.html#a59fca69799f6b9e366710cb9043aa77d">void</a> <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::set_end </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1138,7 +1247,7 @@ template&lt;typename BasicJsonType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a5be8001be099c6b82310f4d387b953ce">reference</a> <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::value </td>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a5be8001be099c6b82310f4d387b953ce">reference</a> <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::value </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1177,7 +1286,7 @@ template&lt;typename BasicJsonType&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; BasicJsonType &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>it</em>&#160;</td>
         </tr>
         <tr>
@@ -1195,6 +1304,131 @@ template&lt;typename BasicJsonType&gt; </div>
 
 <p>addition of distance and iterator </p>
 <dl class="section pre"><dt>Precondition</dt><dd>The iterator is initialized; i.e. <code>m_object != nullptr</code>. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="abf18f18793f84b0222aebb5a2a87da7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf18f18793f84b0222aebb5a2a87da7a">&#9670;&nbsp;</a></span>BasicJsonType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; BasicJsonType &gt;::BasicJsonType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a28328d17a18d9754c89c5c8159677a6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28328d17a18d9754c89c5c8159677a6f">&#9670;&nbsp;</a></span>iteration_proxy< iter_impl ></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy.html">iteration_proxy</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a> &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac501dc2374b4d17a884fc9a656e80d5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac501dc2374b4d17a884fc9a656e80d5a">&#9670;&nbsp;</a></span>iteration_proxy_value< iter_impl ></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::<a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy__value.html">iteration_proxy_value</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">iter_impl</a> &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a86a7c0d4af0cc4ab345b6f0e13cdfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a86a7c0d4af0cc4ab345b6f0e13cdfa">&#9670;&nbsp;</a></span>m_it</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structnlohmann_1_1detail_1_1internal__iterator.html">internal_iterator</a>&lt;typename std::remove_const&lt;<a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a>&gt;::type&gt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::m_it {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>the actual iterator of the associated instance </p>
+
+</div>
+</div>
+<a id="aca84f84be598bdfaaddd23d928c42bbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca84f84be598bdfaaddd23d928c42bbb">&#9670;&nbsp;</a></span>m_object</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a69e52f890ce8c556fd68ce109e24b360">pointer</a> <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html">nlohmann::detail::iter_impl</a>&lt; <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">BasicJsonType</a> &gt;::m_object = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>associated JSON instance </p>
 
 </div>
 </div>

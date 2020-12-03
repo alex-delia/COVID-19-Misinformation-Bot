@@ -6,6 +6,11 @@
 #include <ctime>
 #include "json.hpp"
 #include <typeinfo>
+
+// for convenience
+using json = nlohmann::json;
+using namespace std;
+
 /** covid.h/covid.cpp
  * @brief this class communicates with multiple Covid-19 APIs to provide relevant methods
  * @author Alex D'Elia (251021780)
@@ -15,10 +20,6 @@
  *  are responsible for retrieving and parsing json data from the Covid APIs. These functions are used in the main class to
  * fetch data for tweets 
  */
-
-// for convenience
-using json = nlohmann::json;
-using namespace std;
 
 /** @brief gets the size of the data from the GET request made by curl
 * @param ptr returned data pointer
