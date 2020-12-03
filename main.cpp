@@ -37,10 +37,23 @@ int main()
     Twitter twit_flag = Twitter();
 
     string worldData = covid::getWorldData();
-    string canadaTests = covid::getCanadaTests();
     string canadaDeaths = covid::getCanadaDeaths();
     string canadaRecoveries = covid::getCanadaRecoveries();
     string newsArticles = NewsArticles::getNewsArticles("covid");
+
+    string ONTests = covid::getTests("ON");
+    string QCTests = covid::getTests("QC");
+    string BCTests = covid::getTests("BC");
+    string ABTests = covid::getTests("AB");
+    string SKTests = covid::getTests("SK");
+    string MNTests = covid::getTests("MN");
+    string NSTests = covid::getTests("NS");
+    string NBTests = covid::getTests("NB");
+    string PEITests = covid::getTests("PE");
+    string NLTests = covid::getTests("NL");
+    string NTTests = covid::getTests("NT");
+    string YKTests = covid::getTests("YK");
+    string NUTests = covid::getTests("NU");
 
 
     cout << "Flagging Tweet" << endl;
@@ -50,7 +63,12 @@ int main()
     cout << "Posting Case Count Tweet" << endl;
 
     twit.sendTweet("There were " + worldData + " cases of COVID-19 today, globally");
-    twit_tests.sendTweet("There were " + canadaTests + " COVID-19 tests performed today in Canada");
+
+    twit_tests.sendTweet("Daily Province Change in Covid Testing:\nON: " + ONTests + "\nQC: " + QCTests + "\nBC: " + BCTests + "\nAB: " 
+    + ABTests + "\nSK: " + SKTests + "\nMN: " + MNTests + "\nNS: " + NSTests + "\nNB: " + NBTests + "\nPEI: " + PEITests 
+    + "\nNL: " + NLTests + "\nNT: " + NTTests + "\nYK: " + YKTests + "\nNU: " + NUTests);
+
+
     twit_deaths_recoveries.sendTweet("There were " + canadaDeaths + " COVID-19 deaths and " + canadaRecoveries + " COVID-19 recoveries today in Canada");
     twit.sendTweet("Check out this article: "+ newsArticles); //new
 
